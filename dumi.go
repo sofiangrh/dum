@@ -1,3 +1,11 @@
+package main
+
+const usageMessageTemplate = `Usage: %s <command>
+Where <command> is one of:
+  %s
+For individual command usage, run:
+  %s help <command>
+
 func usage() {
 	command := os.Args[0]
 	var subcommands []string
