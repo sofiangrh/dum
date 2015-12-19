@@ -29,3 +29,13 @@ func help() {
 	}
 	subcommand.Usage(os.Args[0])
 }
+func main() {
+	if len(os.Args) < 2 {
+		usage()
+		return
+	}
+	if os.Args[1] == "help" {
+		help()
+		return
+	}
+}
